@@ -1,0 +1,7 @@
+main(){
+         int a = 4;
+         int b = 1;
+         int c;
+         c = a - b;
+         aprin('suma', c); 
+}
