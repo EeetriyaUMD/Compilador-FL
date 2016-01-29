@@ -1,0 +1,4 @@
+main(){
+        string a = 'Hola Mundo';
+        aprin('saludo:',a);
+}
