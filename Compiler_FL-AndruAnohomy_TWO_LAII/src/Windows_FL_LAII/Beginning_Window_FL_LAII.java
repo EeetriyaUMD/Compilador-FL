@@ -36,6 +36,9 @@ public class Beginning_Window_FL_LAII extends javax.swing.JFrame {
     private static String nameFile = "";
     private static String results;
 
+    /**
+     *
+     */
     @SuppressWarnings({"static-access", "OverridableMethodCallInConstructor"})
     public Beginning_Window_FL_LAII() {
 
@@ -65,6 +68,10 @@ public class Beginning_Window_FL_LAII extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @param text
+     */
     public Beginning_Window_FL_LAII(String text) {
 
         this.object1 = null;
@@ -687,12 +694,20 @@ public class Beginning_Window_FL_LAII extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @param title
+     */
     public void setTitleBeginning_Window(String title) {
 
         this.setTitle(title);
 
     }
 
+    /**
+     *
+     * @param results
+     */
     @SuppressWarnings("static-access")
     public void setResults(String results) {
 
@@ -700,12 +715,19 @@ public class Beginning_Window_FL_LAII extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public String getResults() {
 
         return results;
 
     }
 
+    /**
+     *
+     */
     @SuppressWarnings("static-access")
     public void clearResults() {
 

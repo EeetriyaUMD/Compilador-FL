@@ -26,6 +26,9 @@ public class Semantic_Analyzer_FL_LAII extends Analyzer_FL_LAII {
     private final ArrayList<String> list1;
     private String list2;
 
+    /**
+     *
+     */
     public Semantic_Analyzer_FL_LAII() {
 
         this.semaanticLexico = "";
@@ -39,6 +42,11 @@ public class Semantic_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @SuppressWarnings({"StringConcatenationInsideStringBufferAppend", "override"})
     public boolean semanticAnalyzer(String text) {
 
@@ -565,6 +573,11 @@ public class Semantic_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @SuppressWarnings("override")
     public String getText(String text) {
 
@@ -581,12 +594,20 @@ public class Semantic_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public String getSemanticLexico() {
 
         return semaanticLexico;
 
     }
 
+    /**
+     *
+     * @param semaanticLexico
+     */
     public void setSemanticLexico(String semaanticLexico) {
 
         this.semaanticLexico = semaanticLexico;
@@ -600,16 +621,29 @@ public class Semantic_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean sintacticAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean lexicalAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     */
     @Override
     public void Run() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

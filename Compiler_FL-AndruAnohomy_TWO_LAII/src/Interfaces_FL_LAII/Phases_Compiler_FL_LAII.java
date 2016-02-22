@@ -6,10 +6,25 @@ package Interfaces_FL_LAII;
  */
 public interface Phases_Compiler_FL_LAII {
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     public boolean sintacticAnalyzer(String text);
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     public boolean semanticAnalyzer(String text);
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     public boolean lexicalAnalyzer(String text);
     
 }

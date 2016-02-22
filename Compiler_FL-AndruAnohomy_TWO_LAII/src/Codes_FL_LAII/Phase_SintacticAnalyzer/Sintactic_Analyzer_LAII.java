@@ -15,6 +15,9 @@ public class Sintactic_Analyzer_LAII extends Analyzer_FL_LAII {
     private static String sintacticLexico;
     private boolean resultConfirmed;
 
+    /**
+     *
+     */
     @SuppressWarnings("static-access")
     public Sintactic_Analyzer_LAII() {
 
@@ -24,6 +27,11 @@ public class Sintactic_Analyzer_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     @SuppressWarnings("StringConcatenationInsideStringBufferAppend")
     public boolean sintacticAnalyzer(String text) {
@@ -94,6 +102,11 @@ public class Sintactic_Analyzer_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public String getText(String text) {
 
@@ -112,12 +125,20 @@ public class Sintactic_Analyzer_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public static String getSintacticLexico() {
 
         return sintacticLexico;
 
     }
 
+    /**
+     *
+     * @param sintacticLexico
+     */
     @SuppressWarnings("static-access")
     public void setSintacticLexico(String sintacticLexico) {
 
@@ -132,16 +153,29 @@ public class Sintactic_Analyzer_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean semanticAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean lexicalAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     */
     @Override
     public void Run() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

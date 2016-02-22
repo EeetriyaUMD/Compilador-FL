@@ -13,6 +13,9 @@ public class Results_Window_FL_LAII extends javax.swing.JFrame {
 
     private static String results;
 
+    /**
+     *
+     */
     public Results_Window_FL_LAII() {
 
         super("Resultados");
@@ -20,6 +23,10 @@ public class Results_Window_FL_LAII extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @param text
+     */
     @SuppressWarnings("OverridableMethodCallInConstructor")
     public Results_Window_FL_LAII(String text) {
 
@@ -30,6 +37,10 @@ public class Results_Window_FL_LAII extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @param results
+     */
     @SuppressWarnings("static-access")
     public void setResults(String results) {
 
@@ -37,12 +48,19 @@ public class Results_Window_FL_LAII extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public String getResults() {
 
         return results;
 
     }
 
+    /**
+     *
+     */
     @SuppressWarnings("static-access")
     public void clearResults() {
 

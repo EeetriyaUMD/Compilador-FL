@@ -25,6 +25,10 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
     private String message;
     private final ArrayList<Integer> number = new ArrayList<Integer>();
 
+    /**
+     *
+     * @param name
+     */
     @SuppressWarnings("Convert2Diamond")
     public Generation_Code_FL_LAII(String name) {
 
@@ -39,6 +43,9 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     */
     public Generation_Code_FL_LAII() {
 
         this.file = new File("default");
@@ -51,6 +58,11 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     @SuppressWarnings("StringConcatenationInsideStringBufferAppend")
     public boolean sintacticAnalyzer(String text) {
@@ -121,6 +133,9 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     */
     @SuppressWarnings("override")
     public void Run() {
 
@@ -131,6 +146,11 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public String getText(String text) {
 
@@ -149,6 +169,13 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param av
+     * @param bv
+     * @param res
+     * @param op
+     */
     public void ensSuma(int av, int bv, String res, String op) {
 
         String a = Integer.toHexString(av);
@@ -212,6 +239,9 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     */
     @SuppressWarnings("MalformedRegexp")
     public void crearBat() {
 
@@ -236,6 +266,9 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     */
     public void ejecutarBat() {
         Runtime ejecutar = Runtime.getRuntime();
         try {
@@ -245,12 +278,20 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
         }
     }
 
+    /**
+     *
+     * @param name
+     */
     public void setPath(String name) {
 
         file = new File(getPath().replace(name, "/Files/" + name + ".asm"));
 
     }
 
+    /**
+     *
+     * @return
+     */
     public String getPath() {
 
         return file.getAbsolutePath();
@@ -264,11 +305,21 @@ public class Generation_Code_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean semanticAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean lexicalAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

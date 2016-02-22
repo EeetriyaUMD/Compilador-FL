@@ -15,6 +15,9 @@ public class Lexical_Analyzer_FL_LAII extends Analyzer_FL_LAII {
     private static String analyzerLexico;
     private boolean resultConfirmed;
 
+    /**
+     *
+     */
     @SuppressWarnings("static-access")
     public Lexical_Analyzer_FL_LAII() {
 
@@ -24,6 +27,11 @@ public class Lexical_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @SuppressWarnings({"StringConcatenationInsideStringBufferAppend", "override"})
     public boolean lexicalAnalyzer(String text) {
 
@@ -142,6 +150,11 @@ public class Lexical_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @SuppressWarnings({"ResultOfMethodCallIgnored", "override"})
     public String getText(String text) {
 
@@ -211,12 +224,20 @@ public class Lexical_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public static String getAnalyzerLexico() {
 
         return analyzerLexico;
 
     }
 
+    /**
+     *
+     * @param analyzerLexico
+     */
     @SuppressWarnings("static-access")
     public void setAnalyzerLexico(String analyzerLexico) {
 
@@ -231,16 +252,29 @@ public class Lexical_Analyzer_FL_LAII extends Analyzer_FL_LAII {
 
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean sintacticAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     * @param text
+     * @return
+     */
     @Override
     public boolean semanticAnalyzer(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     *
+     */
     @Override
     public void Run() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

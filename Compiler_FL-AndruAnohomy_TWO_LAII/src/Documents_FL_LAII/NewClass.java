@@ -7,8 +7,16 @@ package Documents_FL_LAII;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ *
+ * @author FL-AndruAnnohomy
+ */
 public class NewClass {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         String regex = "(\\d+) de (\\w+) de (\\d+)";
         Pattern patron = Pattern.compile(regex);

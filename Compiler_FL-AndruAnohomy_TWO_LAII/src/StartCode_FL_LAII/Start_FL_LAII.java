@@ -14,9 +14,16 @@ public class Start_FL_LAII {
     private static final Logger LOG = Logger.getLogger(Start_FL_LAII.class.getName());
     private static final long serialVersionUID = 2012201552509950L;
 
+    /**
+     *
+     */
     public Start_FL_LAII() {
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         try {

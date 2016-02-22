@@ -21,6 +21,9 @@ public class Load_Window_FL_LAII extends javax.swing.JFrame implements Runnable 
         "Cargando.", "Cargando..", "Cargando...", "Cargando..", "Cargando.", "Cargando..", "Cargando...", "Cargando..", "Cargando.", "Cargando..", "Cargando...",
         "Cargando.."};
 
+    /**
+     *
+     */
     public Load_Window_FL_LAII() {
 
         initComponents();

@@ -14,13 +14,28 @@ import javax.swing.border.*;
 import javax.swing.event.*;
 import javax.swing.text.*;
 
+/**
+ *
+ * @author FL-AndruAnnohomy
+ */
 public class NumberLine_FL_LAII extends JPanel implements CaretListener, DocumentListener, PropertyChangeListener {
 
     private static final Logger LOG = Logger.getLogger(NumberLine_FL_LAII.class.getName());
     private static final long serialVersionUID = 2012201552509953L;
 
+    /**
+     *
+     */
     public final static float LEFT = 0.0f;
+
+    /**
+     *
+     */
     public final static float CENTER = 0.5f;
+
+    /**
+     *
+     */
     public final static float RIGHT = 1.0f;
 
     private final static Border OUTER = new MatteBorder(0, 0, 0, 0, Color.BLACK);
@@ -42,12 +57,21 @@ public class NumberLine_FL_LAII extends JPanel implements CaretListener, Documen
 
     private HashMap<String, FontMetrics> fonts;
 
+    /**
+     *
+     * @param component
+     */
     public NumberLine_FL_LAII(JTextComponent component) {
 
         this(component, 3);
 
     }
 
+    /**
+     *
+     * @param component
+     * @param minimumDisplayDigits
+     */
     @SuppressWarnings({"OverridableMethodCallInConstructor", "LeakingThisInConstructor"})
     public NumberLine_FL_LAII(JTextComponent component, int minimumDisplayDigits) {
 
@@ -64,24 +88,40 @@ public class NumberLine_FL_LAII extends JPanel implements CaretListener, Documen
 
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean getUpdateFont() {
 
         return updateFont;
 
     }
 
+    /**
+     *
+     * @param updateFont
+     */
     public void setUpdateFont(boolean updateFont) {
 
         this.updateFont = updateFont;
 
     }
 
+    /**
+     *
+     * @return
+     */
     public int getBorderGap() {
 
         return borderGap;
 
     }
 
+    /**
+     *
+     * @param borderGap
+     */
     public void setBorderGap(int borderGap) {
 
         this.borderGap = borderGap;
@@ -92,36 +132,60 @@ public class NumberLine_FL_LAII extends JPanel implements CaretListener, Documen
 
     }
 
+    /**
+     *
+     * @return
+     */
     public Color getCurrentLineForeground() {
 
         return currentLineForeground == null ? getForeground() : currentLineForeground;
 
     }
 
+    /**
+     *
+     * @param currentLineForeground
+     */
     public void setCurrentLineForeground(Color currentLineForeground) {
 
         this.currentLineForeground = currentLineForeground;
 
     }
 
+    /**
+     *
+     * @return
+     */
     public float getDigitAlignment() {
 
         return digitAlignment;
 
     }
 
+    /**
+     *
+     * @param digitAlignment
+     */
     public void setDigitAlignment(float digitAlignment) {
 
         this.digitAlignment = digitAlignment > 1.0f ? 1.0f : digitAlignment < 0.0f ? -1.0f : digitAlignment;
 
     }
 
+    /**
+     *
+     * @return
+     */
     public int getMinimumDisplayDigits() {
 
         return minimumDisplayDigits;
 
     }
 
+    /**
+     *
+     * @param minimumDisplayDigits
+     */
     public void setMinimumDisplayDigits(int minimumDisplayDigits) {
 
         this.minimumDisplayDigits = minimumDisplayDigits;
@@ -205,6 +269,11 @@ public class NumberLine_FL_LAII extends JPanel implements CaretListener, Documen
 
     }
 
+    /**
+     *
+     * @param rowStartOffset
+     * @return
+     */
     protected String getTextLineNumber(int rowStartOffset) {
 
         Element root = component.getDocument().getDefaultRootElement();
